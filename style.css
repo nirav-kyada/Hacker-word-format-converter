@@ -1,38 +1,190 @@
-*{
-    margin : 0;
-    padding : 0;
+/* @import url('http://fonts.cdnfonts.com/css/despicable-you'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+@font-face {
+	font-family: 'matrix';
+	src: url(/fonts/Antimatrix.ttf);
 }
 
+* {
+	box-sizing: border-box;
+}
+.main-class {
+	color: #000000;
+	font-weight: bold;
+}
 body {
-    background: black;
-    color: white
+	/* background-color: rgb(206, 224, 36); */
+	background-color: skyblue;
+	color: hsl(0, 0%, 0%);
+	margin: auto;
+	width: 90%;
+	display: block;
+	max-height: 100%;
+	max-width: 800px;
+	background: url(/images/matrixhd.gif);
+	margin-bottom: 120px;
+	/* display: block; */
+}
+textarea {
+	width: 100%;
+	/* height: 50%; */
+	margin-right: auto;
+	color: green;
+	margin-left: auto;
+	padding: 2rem;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 800;
+	display: block;
+	position: static;
+	max-width: 800px;
+	background-color: black;
+	border: none;
+}
+nav {
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 2.5rem;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	font-family: 'matrix';
 }
 
-canvas {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    width: 100%;
+button {
+	margin: auto;
+	display: block;
+	text-align: center;
+	padding: 0.5rem;
+	font-size: 1.5rem;
 }
-h1{
-    color: white;
+.btn_div {
+	display: block;
+	margin: auto;
+	padding: 1rem;
+}
+.sideimage {
+	width: 10%;
+	height: 30%;
+	display: block;
+	overflow: hidden;
+	margin: auto;
+	max-width: 10%;
+	min-height: 30%;
+}
+h1 {
+	/* color: red; */
+	text-align: center;
+	font-family: 'matrix', 'Ibm plex mono';
+	font-size: 2rem;
+
+	background: linear-gradient(to right, #27b227, #2f5c05);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	max-width: 100%;
+	background-color: black;
+	opacity: 1;
 }
 
-.container{
-    position: relative;
-}
-nav{
-position: absolute;
-left: 0;
-width: 100%;
-color: white;
-}
-ul{
-    list-style: none;
-    
+main {
+	background-color: black;
+	opacity: 0.9;
 }
 
-ul#menu li{
-    display: inline;
-    padding: 0rem 1rem;
+a {
+	color: yellow;
+}
+a:hover {
+	color: skyblue;
+}
+p {
+	display: block;
+	font-family: 'Ibm plex mono';
+}
+
+#testing {
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	padding-left: 0rem;
+	padding-right: 0rem;
+	padding-top: 0rem;
+	/* font-size: 2.5rem; */
+	border-top-right-radius: 2rem;
+	border-top-left-radius: 2rem;
+	left: 0;
+	bottom: 0;
+	/* position; */
+}
+
+#description {
+	font-size: 1.1rem;
+	text-align: left;
+	padding: 0rem 1rem;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 70px;
+	background-color: black;
+	width: 100%;
+	opacity: 1;
+	color: cyan;
+}
+
+.btn {
+	background-color: black;
+	color: #7bd37b;
+	border: none;
+	padding: 14px 28px;
+	cursor: pointer;
+	border: 2px solid yellow;
+}
+
+#txt-output {
+	font-family: 'matrix';
+}
+
+/* icon bar settings------------- */
+.icon-bar {
+	margin: auto;
+	max-width: 992px;
+	text-align: center;
+}
+.icon-bar a {
+	text-align: center;
+	justify-content: center;
+	padding: 2rem 3rem;
+	transition: all 0.3s ease;
+	color: green;
+	font-size: 5vw;
+	display: inline-flexbox;
+	margin: auto;
+	max-width: 13;
+	border: none;
+}
+
+.icon-bar a:hover {
+	color: white;
+}
+
+@media screen and (min-width: 601px) {
+	.icon-bar {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.icon-bar a {
+		font-size: 2rem;
+	}
 }
