@@ -151,13 +151,14 @@ footer {
 }
 
 #txt-output {
-	font-family: 'matrix';
+	font-family: 'IBM Plex Mono';
 }
 
 /* icon bar settings------------- */
 .icon-bar {
-	margin: auto;
-	max-width: 992px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
 	text-align: center;
 }
 .icon-bar a {
@@ -166,8 +167,8 @@ footer {
 	padding: 2rem 3rem;
 	transition: all 0.3s ease;
 	color: green;
-	font-size: 5vw;
-	display: inline-flexbox;
+	font-size: 3rem;
+	display: inline;
 	margin: auto;
 	max-width: 13;
 	border: none;
@@ -177,13 +178,13 @@ footer {
 	color: white;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
 	.icon-bar {
 		font-size: 3rem;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.icon-bar a {
 		font-size: 2rem;
 	}
